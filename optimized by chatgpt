@@ -1,0 +1,37 @@
+using System;
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+
+            // Ask for the user's First name
+            Console.Write("Enter your First Name: ");
+            var fname = Console.ReadLine();
+
+            // Validate first name
+            if (string.IsNullOrWhiteSpace(fname))
+            {
+                Console.WriteLine("First name cannot be empty. Please restart the program and enter a valid name.");
+                return;
+            }
+
+            // Ask for the user's Last name
+            Console.Write("Enter your Last Name: ");
+            var lname = Console.ReadLine();
+
+            // Validate last name
+            if (string.IsNullOrWhiteSpace(lname))
+            {
+                Console.WriteLine("Last name cannot be empty. Please restart the program and enter a valid name.");
+                return;
+            }
+
+            // Greet the user with their name
+            Console.WriteLine($"Hello, {fname} {lname}!");
+        }
+    }
+}
