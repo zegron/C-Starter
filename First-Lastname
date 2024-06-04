@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+
+            // Ask for the user's First name
+            Console.Write("Enter your First Name: ");
+            string fname = Console.ReadLine();
+
+            // Ask for the user's Last name
+            Console.Write("Enter your Last Name: ");
+            string lname = Console.ReadLine();
+
+            // Greet the user with their name
+
+            Console.WriteLine($"Hello, {fname} {lname}!");
+        }
+    }
+}
